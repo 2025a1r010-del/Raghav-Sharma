@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+int main(){
+    int x;
+    int y;
+    printf ("Enter the value of x ");
+    scanf("%d", &x);
+    printf ("Enter the value of y ");
+    scanf("%d", &y);
+    printf("The sum of x and y is %d \nThe subtraction of the number is %i \nThe multiplication of the number is %i \nThe division of the number is %i", x+y, x-y, x*y, x/y);
+    return 0;
+}
