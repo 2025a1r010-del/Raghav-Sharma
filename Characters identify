@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(){
+    char ch = 'R';
+    int x = 100;
+    float y = 55.8;
+    double z = 55.8;
+    printf("char is %c \nInt is %d \nFloat is %f \nDouble is %lf", ch, x, y, z);
+    return 0;
+}
