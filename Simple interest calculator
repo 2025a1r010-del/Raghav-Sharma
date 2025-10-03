@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main(){
+    float P;
+    float R;
+    float T;
+    printf("Enter the value of Principle: ");
+    scanf("%f", &P);
+     printf("Enter the value of Rate: ");
+    scanf("%f", &R);
+     printf("Enter the value of Time in year: ");
+    scanf("%f", &T);
+    printf("Your simple interest in %.2f", T);
+    printf(" year is %.2f", (P*R*T)/100);
+    return 0;
+}
