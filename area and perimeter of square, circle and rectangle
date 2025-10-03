@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main(){
+    float r, x, y, z, end;
+    float pi=3.142;
+    printf("Enter the value of radius ");
+    scanf("%f", &r);
+    printf("The area of the circle is %f \nThe parameter of circle is %f \n", pi*r*r, 2*pi*r);
+    printf("Enter the value of length x ");
+    scanf("%f", &x);
+    printf("Enter the value of width y ");
+    scanf("%f", &y);
+    printf("The area of the rectangle is %f\nThe parameter of ractangle is %f \n", x*y, 2*(x+y));
+    printf("Enter the length of square ");
+    scanf("%f", &z);
+    printf("The area of the square is %f \nThe parameter of square is %f \n", z*z, 4*z);
+    return 0;
+}
