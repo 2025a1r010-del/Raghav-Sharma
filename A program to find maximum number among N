@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int N, num, i, max=0;
+    scanf("%d", &N);
+    for(i=1;i<=N; i++){
+        printf("Enter a number ");
+        scanf("%d", &num);
+        if(num>max)
+        max=num;
+    }
+    printf("Max number is %d", max);
+    return 0;
+}
