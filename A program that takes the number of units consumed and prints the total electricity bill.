@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float u, A, t, c;
+    scanf("%f", &u);
+
+    if (u <= 50) {
+        A = u * 0.50;
+    } 
+    else if (u <= 150) {
+        A = (50 * 0.50) + ((u - 50) * 0.75);
+    } 
+    else if (u <= 250) {
+        A = (50 * 0.50) + (100 * 0.75) + ((u - 150) * 1.20);
+    } 
+    else {
+        A = (50 * 0.50) + (100 * 0.75) + (100 * 1.20) + ((u - 250) * 1.50);
+    }
+    c = A * 0.20;
+    t = A + c;
+
+    printf("%.2f\n", t);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
