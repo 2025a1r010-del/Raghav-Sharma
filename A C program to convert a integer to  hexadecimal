@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(){
+    int n, rem;
+    char hex[50];
+    int i = 0;
+    scanf("%d", &n);
+    int temp=n;
+    while (temp!=0) {
+        rem=temp%16;
+        if (rem<10)
+            hex[i]=rem+'0';
+        else
+            hex[i]=rem-10+'A';
+        temp=temp/16;
+        i++;
+    }
+
+    printf("Hexadecimal of %d is: ", n);
+    for (int j=i-1; j>=0; j--)
+        printf("%c", hex[j]);
+    return 0;
+}
