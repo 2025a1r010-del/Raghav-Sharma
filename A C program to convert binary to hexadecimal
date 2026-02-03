@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int sum=0, p=0, bin;
+    scanf("%d", &bin);
+    int temp=bin;
+while(temp!=0){
+    int rem=temp%10;
+    sum=sum+rem*pow(2, p);
+    p++;
+    temp=temp/10;
+}
+int r;
+    char hex[50];
+    int i = 0;
+    int t=sum;
+    while (t!=0) {
+        r=t%16;
+        if (r<10)
+            hex[i]=r+'0';
+        else
+            hex[i]=r-10+'A';
+        t=t/16;
+        i++;
+    }
+    for (int j=i-1; j>=0; j--)
+        printf("%c", hex[j]);
+return 0;
+}
