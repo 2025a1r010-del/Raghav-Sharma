@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int sum=0, p=0, oct;
+    scanf("%d", &oct);
+    int temp=oct;
+while(temp!=0){
+    int rem=temp%10;
+    sum=sum+rem*pow(8, p);
+    p++;
+    temp=temp/10;
+}
+printf("%d ", sum);
+return 0;
+}
