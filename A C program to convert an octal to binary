@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int sum=0, p=0, oct;
+    scanf("%d", &oct);
+    int temp=oct;
+while(temp!=0){
+    int rem=temp%10;
+    sum=sum+rem*pow(8, p);
+    p++;
+    temp=temp/10;
+}
+int bin=0;
+    int t=sum;
+    int place=1;
+    while(t!=0){
+        int r=t%2;
+        bin=bin+r*place;
+        t=t/2;
+        place=place*10;
+    }
+    printf("%d ", bin);
+return 0;
+}
